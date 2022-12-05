@@ -1,0 +1,312 @@
+/* za body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4; 
+    position: relative;
+} 
+
+/*-----------------------------------------------------------------------------------*/
+/* heder */
+header {
+    background-color: #125772; 
+    /* boja teksta: */
+    color: #ffffff; 
+    padding-top: 30px;
+    min-height: 70px;
+    /* dekorativna zelena linija isod */
+    border-bottom: #3d7630 5px solid; 
+    position: static;
+}
+
+/* UL lista za meni*/
+ul {
+    margin: 0;
+    padding: 0; 
+}
+
+/* ono sto je u klasi naznaceno i trenutno je zeleno i boldovano */
+header .naznaceno, header .trenutno a {
+    color: #3d7630;
+    font-weight: bold;
+}
+
+/* linkovi u hederu */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    /* sva slova da budu velika: */ 
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+/* lista u hederu */
+header li {
+    /* da bude do leve strane: */
+    float: left;
+    /* da bude prikazano u jednoj liniji: */
+    display: inline;
+    /* padding: 0 20px 0 20px; */
+    padding: 0 1.2em 0 1.2em;
+    
+}
+
+/* heder navigacija */
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* prelaz misem preko elemenata u navigaciji */
+/* bice boldovano i zeleno */
+header a:hover {
+    color: #3d7630;
+    font-weight: bold;
+}
+
+/* kada se klikne na neki od elemenata u headeru on postaje: */
+header a:active {
+    color: black;
+}
+
+/* Logo */
+header #logo {
+    float: left;
+    font-size: 20px;
+}
+
+header #logo h1 {
+    margin: 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* prvi pasus */
+#prvipasus {
+    /* vh - Relative to 1% of the height of the viewport */ 
+    padding: 1.2vh;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#prvipasus h1 {
+    float: left; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* kontejner */
+.kontejner {
+    /* klasa kontejner zauzima 80% ekrana */
+    width: 80%;
+    /* sve u klasi kontejner se pomera na sredinu: */
+    margin: auto;
+    /* ako nesto ode van kontejnera bice sakriveno: */
+    overflow: hidden;
+    /* position static */
+    position: static;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* boxovi */
+#boxes {
+    margin-top: 20px;
+}
+#boxes .box{
+    float: left;
+    text-align: center; 
+    width: 30%;
+    padding: 10px;
+    position: relative;
+}
+#boxes .box img {
+    width: 90px;
+    height: auto;
+}
+#boxes p {
+    text-align: justify;
+    font-style: normal;
+    font-variant: normal;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* sidebar */
+aside#sidebar1 {
+    float: right;
+    width: 20%;
+    margin-top: 10px; 
+
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    background: #35424a; 
+
+   color: white; 
+   text-align: center;
+} 
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* za uvod sekciju */
+#uvod {
+    min-height: 400px;
+    background: url(../img/geo-cover.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    /* dekorativna zelena linija isod */
+    border-bottom:  #3d7630 4px solid; 
+}
+
+#uvod h1 {
+    margin-top: 100px;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#uvod p {
+    font-size: 20px;
+    font-style: normal;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #125772;
+    text-align: center;
+
+}
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* clanci */
+.clanak1 {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    border: #cccccc solid 1px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background: #e6e6e6;
+    border-bottom:  #3d7630 4px solid; 
+    font-style: normal;
+    font-variant: normal;
+    position: relative; 
+    clear: left;
+    /* min-width: 700px; */
+}
+
+.clanak1  img {
+    width: 100%;
+    max-width: 700px; 
+    min-width: 100px;
+    height: auto; 
+
+}
+
+.clanak1 h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.clanak1 h3 {
+    font-size: 17px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* dugme */
+button {
+    background-color: #3d7630;
+    border: none;
+    color: white;
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+} 
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* tabela */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 4px;
+    text-align: left;
+    border-spacing: 0;
+  }
+
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+/* Media */
+/* 768px obicno je velicina za mobilne racunare */
+@media (max-width: 768px) {
+    header #logo,  
+    header nav, 
+    header nav li, 
+    #boxes .box, 
+    article.clanak1,
+    aside#sidebar1,    
+    .clanak1, .kontejner
+    {
+        float: none;
+        text-align: center;
+        width: 90%;
+        height: auto;
+
+    }
+
+    aside#sidebar1 {
+        width: 85.5%;;
+    }
+   .box img {
+    width: 100%;
+    
+    height: auto;
+   }
+   header {
+    padding-bottom: 20px;
+}
+
+
+}
+
+  
+
+    
+    
+
+
+
+
+
+
+
+
+
